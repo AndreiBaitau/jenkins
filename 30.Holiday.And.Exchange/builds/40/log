@@ -1,0 +1,38 @@
+Started by timer
+Running as SYSTEM
+Building on the built-in node in workspace /var/lib/jenkins/workspace/30.Holiday.And.Exchange
+[30.Holiday.And.Exchange] $ /bin/sh -xe /tmp/jenkins11366099476312241555.sh
++ rm -rf result.log
++ date +%Y
++ date +%m
++ date +%d
++ echo year=2023&month=01&day=22
++ full_Date=year=2023&month=01&day=22
++ date
++ echo Date is Sun 22 Jan 2023 11:10:33 AM UTC
+Date is Sun 22 Jan 2023 11:10:33 AM UTC
++ echo Holiday API: 
+Holiday API: 
++ curl -s https://calendarific.com/api/v2/holidays?&api_key=784422c191905c525b72e1d54064dafcf89c1b4f&country=BY&year=2023&month=01&day=22
++ tee -a result.log
+{"meta":{"code":200},"response":{"holidays":[]}}+ echo \nCurrency USD
++ tee -a result.log
+
+Currency USD
++ tee -a result.log
++ curl -s https://www.nbrb.by/api/exrates/rates/USD?parammode=2
+{"Cur_ID":431,"Date":"2023-01-22T00:00:00","Cur_Abbreviation":"USD","Cur_Scale":1,"Cur_Name":"Доллар США","Cur_OfficialRate":2.6401}+ echo \nCurrency EUR
++ tee -a result.log
+
+Currency EUR
++ curl -s https://www.nbrb.by/api/exrates/rates/EUR?parammode=2
++ tee -a result.log
+{"Cur_ID":451,"Date":"2023-01-22T00:00:00","Cur_Abbreviation":"EUR","Cur_Scale":1,"Cur_Name":"Евро","Cur_OfficialRate":2.8584}Archiving artifacts
+{"ok":false,"error":"invalid_auth"}  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   868    0    35  100   833    103   2471 --:--:-- --:--:-- --:--:--  2575
+[Slack Notifications] found #39 as previous completed, non-aborted build
+[Slack Notifications] will send OnSuccessNotification because build matches and user preferences allow it
+Using dirname=/var/lib/jenkins/workspace/30.Holiday.And.Exchange and includeMask=/var/lib/jenkins/workspace/30.Holiday.And.Exchange/result.log
+No files found for mask=/var/lib/jenkins/workspace/30.Holiday.And.Exchange
+Finished: SUCCESS

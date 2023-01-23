@@ -1,0 +1,25 @@
+Started by user [8mha:////4PhIk9PfJVfTPwz7xT7anOtxVNty+mSltm3Ohm2b7pNtAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building on the built-in node in workspace /var/lib/jenkins/workspace/30.Holiday.And.Exchange
+[30.Holiday.And.Exchange] $ /bin/bash /tmp/jenkins5946087267577201603.sh
+/tmp/jenkins5946087267577201603.sh: command substitution: line 3: syntax error near unexpected token `;&'
+/tmp/jenkins5946087267577201603.sh: command substitution: line 3: `date +&quot;&amp;year=%Y&amp;month=%m&amp;day=%d&quot;)'
+
+/tmp/jenkins5946087267577201603.sh: line 3: quot: command not found
+/tmp/jenkins5946087267577201603.sh: line 3: quot: command not found
+/tmp/jenkins5946087267577201603.sh: line 4: quot: command not found
+/tmp/jenkins5946087267577201603.sh: line 3: Today: command not found
+/tmp/jenkins5946087267577201603.sh: line 4: amp: command not found
+/tmp/jenkins5946087267577201603.sh: line 4: https://holidays.abstractapi.com/v1/?api_key=57b3ae1124974c95811cd419c1ffc026: No such file or directory
+/tmp/jenkins5946087267577201603.sh: line 4: quot: command not found
+
+
+/tmp/jenkins5946087267577201603.sh: line 6: quot: command not found
+/tmp/jenkins5946087267577201603.sh: line 6: Today: command not found
+/tmp/jenkins5946087267577201603.sh: line 6: quot: command not found
+/tmp/jenkins5946087267577201603.sh: line 7: jq: command not found
+curl: no URL specified!
+curl: try 'curl --help' or 'curl --manual' for more information
+Build step 'Execute shell' marked build as failure
+[Slack Notifications] found #2 as previous completed, non-aborted build
+Finished: FAILURE

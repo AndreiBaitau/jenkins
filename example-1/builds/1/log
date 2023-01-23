@@ -1,0 +1,7 @@
+Started by user [8mha:////4PhIk9PfJVfTPwz7xT7anOtxVNty+mSltm3Ohm2b7pNtAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building remotely on [8mha:////4OUv0kw8rFdqgBlYvsDXsx20uGz5/DMJ2HNxlyzz7k8tAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgY+/eT83ILSktQi/TygOwHwYj8LwwAAAA==[0mnode (slave) in workspace /var/lib/jenkins/workspace/example-1
+[example-1] $ /bin/sh -xe /tmp/jenkins11305693258489815410.sh
++ echo Hello World!
+Hello World!
+Finished: SUCCESS

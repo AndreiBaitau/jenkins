@@ -1,0 +1,18 @@
+Started by user [8mha:////4PhIk9PfJVfTPwz7xT7anOtxVNty+mSltm3Ohm2b7pNtAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building on the built-in node in workspace /var/lib/jenkins/workspace/30.Holiday.And.Exchange
+[30.Holiday.And.Exchange] $ /bin/sh -xe /tmp/jenkins17470998762846452007.sh
++ date +%Y
++ echo year=2023&amp
++ date +%m
++ month=01&amp
++ date +%d
++ day=20
++ TODAY=year=2023&amp
++ quot
+/tmp/jenkins17470998762846452007.sh: 3: quot: not found
++ echo
+
+Build step 'Execute shell' marked build as failure
+[Slack Notifications] found #15 as previous completed, non-aborted build
+Finished: FAILURE

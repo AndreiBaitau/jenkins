@@ -1,0 +1,34 @@
+Started by user [8mha:////4PhIk9PfJVfTPwz7xT7anOtxVNty+mSltm3Ohm2b7pNtAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building on the built-in node in workspace /var/lib/jenkins/workspace/30.Holiday.And.Exchange
+[30.Holiday.And.Exchange] $ /bin/sh -xe /tmp/jenkins7423406117220717987.sh
++ date +%Y
++ date +%m
++ date +%d
++ echo year=2023&month=01&day=20
++ full_Date=year=2023&month=01&day=20
++ date
++ echo Date is Fri 20 Jan 2023 11:18:29 AM UTC
+Date is Fri 20 Jan 2023 11:18:29 AM UTC
++ echo Holiday API: 
+Holiday API: 
++ curl -s https://calendarific.com/api/v2/holidays?&api_key=784422c191905c525b72e1d54064dafcf89c1b4f&country=BY&year=2023&month=01&day=20
++ tee -a result.log
+{"meta":{"code":200},"response":{"holidays":[]}}+ echo \nCurrency USD
++ tee -a result.log
+
+Currency USD
++ curl+ tee -a result.log
+ -s https://www.nbrb.by/api/exrates/rates/USD?parammode=2
+{"Cur_ID":431,"Date":"2023-01-20T00:00:00","Cur_Abbreviation":"USD","Cur_Scale":1,"Cur_Name":"Доллар США","Cur_OfficialRate":2.6401}+ echo \nCurrency EUR
++ tee -a result.log
+
+Currency EUR
++ curl -s https://www.nbrb.by/api/exrates/rates/EUR?parammode=2
++ tee -a result.log
+{"Cur_ID":451,"Date":"2023-01-20T00:00:00","Cur_Abbreviation":"EUR","Cur_Scale":1,"Cur_Name":"Евро","Cur_OfficialRate":2.8584}[Slack Notifications] found #23 as previous completed, non-aborted build
+[Slack Notifications] will send OnSuccessNotification because build matches and user preferences allow it
+Using dirname=/var/lib/jenkins/workspace/30.Holiday.And.Exchange and includeMask=result.log
+Adding file /var/lib/jenkins/workspace/30.Holiday.And.Exchange/result.log
+Slack upload may have failed. Response: {"ok":false,"error":"invalid_auth"}
+Finished: SUCCESS

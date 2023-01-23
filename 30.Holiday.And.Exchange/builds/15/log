@@ -1,0 +1,35 @@
+Started by user [8mha:////4PhIk9PfJVfTPwz7xT7anOtxVNty+mSltm3Ohm2b7pNtAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building on the built-in node in workspace /var/lib/jenkins/workspace/30.Holiday.And.Exchange
+[30.Holiday.And.Exchange] $ /bin/bash /tmp/jenkins479055276532873328.sh
+
+/tmp/jenkins479055276532873328.sh: line 3: quot: command not found
+/tmp/jenkins479055276532873328.sh: line 3: quot: command not found
+/tmp/jenkins479055276532873328.sh: line 4: quot: command not found
+/tmp/jenkins479055276532873328.sh: line 4: Holiday: command not found
+/tmp/jenkins479055276532873328.sh: line 4: quot: command not found
+
+/tmp/jenkins479055276532873328.sh: line 3: Today: command not found
+/tmp/jenkins479055276532873328.sh: line 6: quot: command not found
+/tmp/jenkins479055276532873328.sh: line 6: https://calendarific.com/api/v2/holidays?: No such file or directory
+/tmp/jenkins479055276532873328.sh: line 6: amp: command not found
+/tmp/jenkins479055276532873328.sh: line 6: amp: command not found
+/tmp/jenkins479055276532873328.sh: line 6: amp: command not found
+/tmp/jenkins479055276532873328.sh: line 6: year=2023&amp: command not found
+/tmp/jenkins479055276532873328.sh: line 6: quot: command not found
+
+/tmp/jenkins479055276532873328.sh: line 7: quot: command not found
+/tmp/jenkins479055276532873328.sh: line 7: nCurrency: command not found
+/tmp/jenkins479055276532873328.sh: line 7: quot: command not found
+/tmp/jenkins479055276532873328.sh: line 8: apos: command not found
+/tmp/jenkins479055276532873328.sh: line 8: https://www.nbrb.by/api/exrates/rates/USD?parammode=2: No such file or directory
+/tmp/jenkins479055276532873328.sh: line 8: apos: command not found
+
+/tmp/jenkins479055276532873328.sh: line 9: quot: command not found
+/tmp/jenkins479055276532873328.sh: line 9: nCurrency: command not found
+/tmp/jenkins479055276532873328.sh: line 9: quot: command not found
+/tmp/jenkins479055276532873328.sh: line 10: apos: command not found
+/tmp/jenkins479055276532873328.sh: line 10: apos: command not found
+curl: Build step 'Execute shell' marked build as failure
+[Slack Notifications] found #14 as previous completed, non-aborted build
+Finished: FAILURE

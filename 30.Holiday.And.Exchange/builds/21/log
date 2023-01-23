@@ -1,0 +1,27 @@
+Started by user [8mha:////4PhIk9PfJVfTPwz7xT7anOtxVNty+mSltm3Ohm2b7pNtAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building on the built-in node in workspace /var/lib/jenkins/workspace/30.Holiday.And.Exchange
+[30.Holiday.And.Exchange] $ /bin/sh -xe /tmp/jenkins11392503925986783529.sh
++ date +%Y
++ date +%m
++ date +%d
++ echo year=2023month=01day=20
++ TODAY=year=2023month=01day=20
++ date
++ echo Today is Fri 20 Jan 2023 11:02:56 AM UTC
+Today is Fri 20 Jan 2023 11:02:56 AM UTC
++ echo Holiday API response
+Holiday API response
++ date +%Y
++ date +%m
++ date +%d
++ echo year=2023month=01day=20
++ TODAY=year=2023month=01day=20
++ + year=2023month=01day=20
+api_key=784422c191905c525b72e1d54064dafcf89c1b4f
+/tmp/jenkins11392503925986783529.sh: 6: year=2023month=01day=20: not found
++ country=BY
++ curl -s https://calendarific.com/api/v2/holidays?
+{"meta":{"code":401,"error_type":"auth failed","error_detail":"Missing or invalid api credentials. See https:\/\/calendarific.com\/api for details."},"response":[]}Build step 'Execute shell' marked build as failure
+[Slack Notifications] found #20 as previous completed, non-aborted build
+Finished: FAILURE

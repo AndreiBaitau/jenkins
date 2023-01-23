@@ -1,0 +1,69 @@
+Started by user [8mha:////4PhIk9PfJVfTPwz7xT7anOtxVNty+mSltm3Ohm2b7pNtAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building remotely on [8mha:////4OUv0kw8rFdqgBlYvsDXsx20uGz5/DMJ2HNxlyzz7k8tAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgY+/eT83ILSktQi/TygOwHwYj8LwwAAAA==[0mnode (slave) in workspace /var/lib/jenkins/workspace/10.print.env
+[10.print.env] $ /bin/bash /tmp/jenkins15007324602680199763.sh
+Fri 20 Jan 2023 09:36:40 AM UTC
+SHELL=/bin/sh
+RUN_TESTS_DISPLAY_URL=http://jenkins.sa/job/10.print.env/1/display/redirect?page=tests
+JENKINS_SERVER_COOKIE=41157a0d207dc2a9
+RUN_CHANGES_DISPLAY_URL=http://jenkins.sa/job/10.print.env/1/display/redirect?page=changes
+PWD=/var/lib/jenkins/workspace/10.print.env
+HUDSON_HOME=/var/lib/jenkins
+LOGNAME=jenkins
+XDG_SESSION_TYPE=tty
+BUILD_URL=http://jenkins.sa/job/10.print.env/1/
+JOB_URL=http://jenkins.sa/job/10.print.env/
+BUILD_NUMBER=1
+MOTD_SHOWN=pam
+BUILD_DISPLAY_NAME=#1
+HOME=/var/lib/jenkins
+LANG=en_US.UTF-8
+JENKINS_URL=http://jenkins.sa/
+JOB_BASE_NAME=10.print.env
+JOB_NAME=10.print.env
+RUN_DISPLAY_URL=http://jenkins.sa/job/10.print.env/1/display/redirect
+SSH_CONNECTION=192.168.1.111 43898 192.168.1.112 22
+JOB_DISPLAY_URL=http://jenkins.sa/job/10.print.env/display/redirect
+WORKSPACE=/var/lib/jenkins/workspace/10.print.env
+HUDSON_URL=http://jenkins.sa/
+XDG_SESSION_CLASS=user
+NODE_NAME=node
+USER=jenkins
+HUDSON_SERVER_COOKIE=41157a0d207dc2a9
+SHLVL=1
+BUILD_TAG=jenkins-10.print.env-1
+EXECUTOR_NUMBER=0
+HUDSON_COOKIE=f2dd9545-abd8-461b-bd2e-473ab6f2228d
+XDG_SESSION_ID=9
+JENKINS_HOME=/var/lib/jenkins
+XDG_RUNTIME_DIR=/run/user/1001
+SSH_CLIENT=192.168.1.111 43898 22
+NODE_LABELS=node slave
+WORKSPACE_TMP=/var/lib/jenkins/workspace/10.print.env@tmp
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+RUN_ARTIFACTS_DISPLAY_URL=http://jenkins.sa/job/10.print.env/1/display/redirect?page=artifacts
+CI=true
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1001/bus
+BUILD_ID=1
+OLDPWD=/var/lib/jenkins
+_=/usr/bin/env
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:59:cb:31 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic eth0
+       valid_lft 78323sec preferred_lft 78323sec
+    inet6 fe80::a00:27ff:fe59:cb31/64 scope link 
+       valid_lft forever preferred_lft forever
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:cf:51:97 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.1.112/24 brd 192.168.1.255 scope global eth1
+       valid_lft forever preferred_lft forever
+    inet6 fe80::a00:27ff:fecf:5197/64 scope link 
+       valid_lft forever preferred_lft forever
+[Slack Notifications] will send OnSuccessNotification because build matches and user preferences allow it
+Finished: SUCCESS

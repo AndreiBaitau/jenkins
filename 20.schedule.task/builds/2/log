@@ -1,0 +1,6 @@
+Started by timer
+Running as SYSTEM
+Building on the built-in node in workspace /var/lib/jenkins/workspace/20.schedule.task
+[20.schedule.task] $ /bin/bash /tmp/jenkins527023419928510435.sh
+Fri 20 Jan 2023 09:42:14 AM UTC
+Finished: SUCCESS

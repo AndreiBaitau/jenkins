@@ -1,0 +1,5 @@
+{"meta":{"code":200},"response":{"holidays":[]}}
+Currency USD
+{"Cur_ID":431,"Date":"2023-01-20T00:00:00","Cur_Abbreviation":"USD","Cur_Scale":1,"Cur_Name":"Доллар США","Cur_OfficialRate":2.6401}
+Currency EUR
+{"Cur_ID":451,"Date":"2023-01-20T00:00:00","Cur_Abbreviation":"EUR","Cur_Scale":1,"Cur_Name":"Евро","Cur_OfficialRate":2.8584}
