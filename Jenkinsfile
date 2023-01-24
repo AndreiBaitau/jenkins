@@ -30,7 +30,9 @@ pipeline {
         post {
             always {
                 archiveArtifacts 'hadolint_lint.txt'
+                sh 'sleep 5'            
             }
+
         }
     }
    
@@ -38,7 +40,7 @@ pipeline {
       steps{ 
 
         script {
-             sh 'docker '
+             sh 'sleep 5 '
              dockerImage = docker.build registry + ":$BUILD_NUMBER" , "--network host ."
         }
       }
