@@ -45,7 +45,15 @@ pipeline {
       }
     }
    
-
+    stage('Test image') {
+      steps{
+        sh "docker run -d -p 81:81 --name $BUILD_NUMVER -t $registry:$BUILD_NUMBER"
+        sh" sed -i 's/latest/$BUILD_NUMBER/' jenkins.yaml"
+        sh "sleep 5"
+        sh 'curl http://172.17.0.2:5000'
+        
+      }
+    }
     stage('Push Image to repo') {
       steps{
         script {
@@ -58,10 +66,10 @@ pipeline {
     stage('Deploy in pre-prod') {
       steps{
           withKubeConfig([credentialsId: 'mykubeconfig']) {
-          sh "kubectl get pods --namespace=pre=prod"
+          sh "kubectl get pods --namespace=pre-prod"
           sh "kubectl apply -f jenkins.yaml --namespace=pre-prod"
           sleep 4
-          sh "kubectl get pods --namespace=pre=prod"
+          sh "kubectl get pods --namespace=pre-prod"
           }
       }
     }
