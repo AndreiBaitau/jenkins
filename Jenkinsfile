@@ -32,10 +32,9 @@ pipeline {
     stage('Building image') {
       steps{ 
 
-        def dockerHome = tool 'myDocker'
-        env.PATH = "${dockerHome}/bin:${env.PATH}"
-
         script {
+             def dockerHome = tool 'myDocker'
+        env.PATH = "${dockerHome}/bin:${env.PATH}"
              dockerImage = docker.build registry + ":$BUILD_NUMBER" , "--network host ."
         }
       }
