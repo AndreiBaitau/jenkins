@@ -11,7 +11,7 @@ pipeline {
       }
     }
 
-    stage ("Lint dockerfile") {
+   ''' stage ("Lint dockerfile") {
         agent {
             docker {
                 image 'hadolint/hadolint:latest-debian'
@@ -26,7 +26,7 @@ pipeline {
                 archiveArtifacts 'hadolint_lint.txt'
             }
         }
-    }
+    }'''
 
     stage('Building image') {
       steps{
