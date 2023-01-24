@@ -5,13 +5,12 @@ pipeline {
   }
       agent any
   stages {
-      stage('Initialize'){
-        def dockerHome = tool 'myDocker'
-        env.PATH = "${dockerHome}/bin:${env.PATH}"
-    }
+      
 
     stage('Cloning Git') {
       steps {
+        def dockerHome = tool 'myDocker'
+        env.PATH = "${dockerHome}/bin:${env.PATH}"
         git 'https://github.com/AndreiBaitau/jenkins.git'
         sh 'ls -l'
       }
