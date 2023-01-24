@@ -8,7 +8,7 @@ pipeline {
     stage('Cloning Git') {
       steps {
         git 'https://github.com/AndreiBaitau/jenkins.git'
-        shell('ls -l')
+        sh 'ls -l'
       }
     }
 
