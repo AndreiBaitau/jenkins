@@ -34,7 +34,7 @@ pipeline {
 
         script {
         
-             dockerImage = docker.build registry + ":$BUILD_NUMBER" , "--network host ."
+             dockerImage = docker.build registry + ":$BUILD_NUMBER" , "--network host  /var/lib/jenkins/workspace/Hometask21/"
         }
       }
     }
