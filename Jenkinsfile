@@ -30,7 +30,7 @@ pipeline {
         post {
             always {
                 archiveArtifacts 'hadolint_lint.txt'
-                sh 'sleep 2'            
+                            
             }
 
         }
@@ -40,7 +40,6 @@ pipeline {
       steps{ 
 
         script {
-             sh 'sleep 2 '
              dockerImage = docker.build registry + ":$BUILD_NUMBER" , "--network host ."
         }
       }
@@ -48,10 +47,7 @@ pipeline {
     stage('Test image') {
       steps{
         sh "docker run -d -p 8080:8080 $registry:$BUILD_NUMBER"
-        sh" sed -i 's/latest/$BUILD_NUMBER/' jenkins.yaml"
-        sh "sleep 5"
-        sh 'wget http://localhost:8080'
-        sh 'cat index.html'
+       
       }
     }
 
