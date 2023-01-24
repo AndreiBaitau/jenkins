@@ -47,7 +47,7 @@ pipeline {
     stage('Test image') {
       steps{
         sh "docker run -d -p 8081:8081 $registry:$BUILD_NUMBER"
-        sh 'curl http://172.17.0.2:8081 '
+        sh 'curl http://127.0.0.1:5000 '
       }
     }
 
