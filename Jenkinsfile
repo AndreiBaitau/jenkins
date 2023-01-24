@@ -28,12 +28,13 @@ pipeline {
             }
         }
     }
-    stage('Initialize'){
+   
+    stage('Building image') {
+      steps{ 
+
         def dockerHome = tool 'myDocker'
         env.PATH = "${dockerHome}/bin:${env.PATH}"
-    }
-    stage('Building image') {
-      steps{
+
         script {
              dockerImage = docker.build registry + ":$BUILD_NUMBER" , "--network host ."
         }
