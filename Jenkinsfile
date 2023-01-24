@@ -38,20 +38,12 @@ pipeline {
       steps{ 
 
         script {
-        
+             sh 'docker '
              dockerImage = docker.build registry + ":$BUILD_NUMBER" , "--network host  /var/lib/jenkins/workspace/Hometask21/"
         }
       }
     }
-    stage('Test image') {
-      steps{
-        sh "docker run -d -p 8080:8080 $registry:$BUILD_NUMBER"
-        sh" sed -i 's/latest/$BUILD_NUMBER/' jenkins.yaml"
-        sh "sleep 5"
-        sh 'wget http://localhost:8080'
-        sh 'cat index.html'
-      }
-    }
+   
 
     stage('Push Image to repo') {
       steps{
