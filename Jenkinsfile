@@ -11,7 +11,7 @@ pipeline {
     stage('Cloning Git') {
       steps {
         
-        ${env.PATH} = "${dockerHome}/bin:${env.PATH}"
+        env.PATH = "${dockerHome}/bin:${env.PATH}"
         git 'https://github.com/AndreiBaitau/jenkins.git'
         sh 'ls -l'
       }
