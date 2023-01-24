@@ -4,7 +4,7 @@ pipeline {
     registryCredential = 'docker'
 
   }
-      agent any
+      agent { label 'master'}
   stages {
       
 
