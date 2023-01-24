@@ -2,7 +2,7 @@ pipeline {
       environment {
     registry = "andreibaitov/jenkins"
     registryCredential = 'docker'
-    def dockerHome = tool 'myDocker'
+
   }
       agent any
   stages {
@@ -11,7 +11,7 @@ pipeline {
     stage('Cloning Git') {
       steps {
         
-        env.PATH = "${dockerHome}/bin:${env.PATH}"
+        
         git 'https://github.com/AndreiBaitau/jenkins.git'
         sh 'ls -l'
       }
