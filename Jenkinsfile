@@ -51,6 +51,7 @@ pipeline {
         sh" sed -i 's/latest/$BUILD_NUMBER/' jenkins.yaml"
         sh "sleep 5"
         sh 'curl http://172.17.0.2:5000'
+        sh "docker kill $BUILD_NUMBER"
         
       }
     }
@@ -104,10 +105,10 @@ pipeline {
   }
   post {
     success {
-      slackSend (color: '#00FF00', message: "Deployment success: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'")
+      slackSend (color: '#00FF00', message: "Deployment was successfuly done: \n Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'")
     }
     failure {
-      slackSend (color: '#FF0000', message: "Deployment failed: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'")
+      slackSend (color: '#FF0000', message: "Deployment was failed: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'")
     }
   }
 }

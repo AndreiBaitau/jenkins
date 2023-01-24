@@ -29,7 +29,7 @@ spec:
         app: jenkins
     spec:
       containers:
-        - image: aandreibaitov/jenkins:latest
+        - image: andreibaitov/jenkins:latest
           name: jenkins
           env:
           ports:
