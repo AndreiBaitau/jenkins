@@ -8,6 +8,7 @@ pipeline {
     stage('Cloning Git') {
       steps {
         git 'https://github.com/AndreiBaitau/jenkins.git'
+        shell('ls -l')
       }
     }
 
@@ -15,7 +16,7 @@ pipeline {
         agent {
             docker {
                 image 'hadolint/hadolint:latest-debian'
-                label 'slave'
+                label 'master'
             }
         }
         steps {
