@@ -49,6 +49,7 @@ pipeline {
     stage('Push Image to repo') {
       steps{
         script {
+            sh 'docker push andreibaitov/jenkins:'+${env.BUILD_NUMBER}
             docker.withRegistry( 'andreibaitov/jenkins', registryCredential ) {
             dockerImage.push()
           }
