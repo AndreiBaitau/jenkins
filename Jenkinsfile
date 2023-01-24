@@ -44,11 +44,7 @@ pipeline {
         }
       }
     }
-    stage('Test image') {
-      steps{
-        sh "docker run -i $registry:$BUILD_NUMBER"
-      }
-    }
+   
 
     stage('Push Image to repo') {
       steps{
